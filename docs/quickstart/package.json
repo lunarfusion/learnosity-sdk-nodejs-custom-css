@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
     "uuid": "^8.3.2"
   },
-  "devDependencies": {},
   "scripts": {
     "start-standalone-assessment": "npm install && node ./assessment/standalone-assessment.js",
     "start-reports": "npm install && node ./analytics/reports.js",

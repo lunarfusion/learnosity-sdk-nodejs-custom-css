@@ -1,0 +1,171 @@
+/****** ALIASES - named for specific component ******/
+.lrn.lrn-assess button[class^="lrn_btn"],
+.lrn.lrn-assess .lrn-region:not(.lrn-items-region) button[class^="lrn_btn"] {
+  /* color */
+  --gm-btn-color-text-primary-default: var(--gm-component-color-text-primary-default);
+  --gm-btn-color-text-primary-hover: var(--gm-component-color-text-primary-hover);
+  --gm-btn-color-text-primary-focus: var(--gm-component-color-text-primary-focus);
+  --gm-btn-color-text-primary-active: var(--gm-component-color-text-primary-active);
+  --gm-btn-color-text-primary-disabled: var(--gm-component-color-text-disabled-default);
+  
+  --gm-btn-color-text-ghost-default: var(--gm-component-color-text-ghost-default);
+  --gm-btn-color-text-ghost-disabled: var(--gm-component-color-text-disabled-default);
+  
+  --gm-btn-color-bg-primary-default: var(--gm-component-color-bg-primary-default);
+  --gm-btn-color-bg-primary-hover: var(--gm-component-color-bg-primary-hover);
+  --gm-btn-color-bg-primary-focus: var(--gm-component-color-bg-primary-focus);
+  --gm-btn-color-bg-primary-active: var(--gm-component-color-bg-primary-active);
+  --gm-btn-color-bg-primary-disabled: var(--gm-component-color-bg-primary-disabled);
+  
+  /* ghost */
+  --gm-btn-color-bg-ghost-default: var(--gm-component-color-bg-ghost-default);
+  --gm-btn-color-bg-ghost-hover: var(--gm-component-color-bg-ghost-hover);
+  --gm-btn-color-bg-ghost-focus: var(--gm-component-color-bg-ghost-focus);
+  --gm-btn-color-bg-ghost-active: var(--gm-component-color-bg-ghost-active);
+  --gm-btn-color-bg-ghost-disabled: var(--gm-component-color-bg-ghost-disabled);
+  
+  --gm-btn-color-border-ghost-default: var(--gm-component-color-border-ghost-default);
+  --gm-btn-color-border-ghost-hover: var(--gm-component-color-border-ghost-hover);
+  --gm-btn-color-border-ghost-focus: var(--gm-component-color-border-ghost-focus);
+  --gm-btn-color-border-ghost-active: var(--gm-component-color-border-ghost-active);
+  --gm-btn-color-border-ghost-disabled: var(--gm-component-color-border-ghost-disabled);
+  
+  /* size */
+  --gm-btn-block-size: var(--gm-component-size-md);
+  --gm-btn-inline-size-min: var(--gm-component-size-md);
+  
+  /* padding */
+  --gm-btn-padding-block: var( --gm-component-sp-interior-block);
+  --gm-btn-padding-inline: var(--gm-component-sp-interior-inline);
+  
+  /* spacing - small buttons */
+  --gm-btn-block-size-small: var(--gm-component-size-sm);
+  --gm-btn-inline-size-min-small: var(--gm-component-size-sm);
+  
+  /* border radii */
+  --gm-border-radius-btn: var(--gm-component-border-radius-1);
+ 
+  /* text style */
+  --gm-btn-text-size: var(--gm-component-text-size);
+  
+  /* focus indicator */
+  --gm-btn-focus-indicator-shadow: var(--gm-component-focus-indicator-shadow);
+
+}
+
+
+/********* Set Styles *********/
+
+/* set inline size to not apply to right region small buttons */
+.gm .lrn.lrn-assess .lrn-region:not(.lrn-right-region) button[class^="lrn_btn"] {
+  min-inline-size: var(--gm-btn-inline-size-min);
+  inline-size: auto;
+}
+
+/* default style is ghost button */
+.gm .lrn.lrn-assess button[class^="lrn_btn"],
+.gm .lrn.lrn-assess .lrn-region:not(.lrn-items-region) button[class^="lrn_btn"] {
+  position: relative;
+  display: inline-flex;
+  box-sizing: border-box;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+  
+  block-size: var(--gm-btn-block-size);
+  min-block-size: var(--gm-btn-block-size);
+
+  padding-block: var(--gm-btn-padding-block);
+  padding-inline: var(--gm-btn-padding-inline);
+  
+  font-size: var(--gm-btn-text-size);
+  font-weight: 400;
+  text-align: center;
+
+  border-radius: var(--gm-border-radius-btn);
+  outline: none;
+  appearance: none;
+  
+  cursor: pointer;
+  
+  border-width: 1px;
+  border-style: solid;
+  background-color: var(--gm-btn-color-bg-ghost-default);
+  border-color: var(--gm-btn-color-border-ghost-default);
+  
+  color: var(--gm-btn-color-text-ghost-default);
+
+  /* icon */
+  &::before {
+    padding: 0;
+    margin: 0;
+    height: 0;
+    line-height: 0;
+  }
+
+  /* learnosity focus indicator, ditch this */
+  &::after {
+    display: none;
+  }
+
+  /* label, screen reader only when icon only */
+  .btn-label {
+  }
+  
+  &:hover {
+    background-color: var(--gm-btn-color-bg-ghost-hover);
+    border-color: var(--gm-btn-color-border-ghost-hover);
+  }
+  
+  &:focus {
+    background-color: var(--gm-btn-color-bg-ghost-focus);
+    border-color: var(--gm-btn-color-border-ghost-focus);
+  }
+
+  &:active {
+    background-color: var(--gm-btn-color-bg-ghost-active);
+    border-color: var(--gm-btn-color-border-ghost-active);
+  }
+  
+  &:disabled {
+    background-color: var(--gm-btn-color-bg-ghost-disabled);
+    border-color: var(--gm-btn-color-border-ghost-disabled);
+    color: var(--gm-btn-color-text-ghost-disabled);
+  }
+  
+  /*** VARIANTS ***/
+  
+  /* Primary - next button and start button */
+  &#lrn_assess_next_btn,
+  &.start-test-btn {
+    color: var(--gm-btn-color-text-primary-default);
+    
+    background-color: var(--gm-btn-color-bg-primary-default);
+    border: 0px solid transparent;
+    
+    &:hover:not(:disabled) {
+      background: var(--gm-btn-color-bg-primary-hover);
+      color: var(--gm-btn-color-text-primary-hover);
+    }
+    
+    &:focus {
+      background: var(--gm-btn-color-bg-primary-focus);
+      color: var(--gm-btn-color-text-primary-focus);
+      outline: none;
+      appearance: none;
+      box-shadow: var(--gm-btn-focus-indicator-shadow);
+    }
+    
+    &:active {
+      background: var(--gm-btn-color-bg-primary-active);
+      color: var(--gm-btn-color-text-primary-active);
+      outline: none;
+      appearance: none;
+    }
+    
+    &:disabled {
+      color: var(--gm-btn-color-text-primary-disabled);
+      background-color: var(--gm-btn-color-bg-primary-disabled);
+    } 
+  }
+}

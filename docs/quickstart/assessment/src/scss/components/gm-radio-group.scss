@@ -1,0 +1,178 @@
+.gm .lrn.lrn-assess .lrn_mcq {
+  /* border color - unchecked */
+  --gm-btn-radio-color-border-default: var(--gm-component-input-color-border-unchecked-default);
+  --gm-btn-radio-color-border-hover: var(--gm-component-input-color-border-unchecked-hover);
+  --gm-btn-radio-color-border-focus: var(--gm-component-input-color-border-unchecked-focus);
+  --gm-btn-radio-color-border-active: var(--gm-component-input-color-border-unchecked-active);
+  --gm-btn-radio-color-border-disabled: var(--gm-component-input-color-border-unchecked-disabled);
+  
+  /* background color - unchecked */
+  --gm-btn-radio-color-bg-unchecked: transparent;
+  --gm-btn-radio-color-bg-unchecked-hover: var(--gm-white);
+  --gm-btn-radio-color-bg-unchecked-focus: transparent;
+  --gm-btn-radio-color-bg-unchecked-active: var(--gm-beige40);
+  --gm-btn-radio-color-bg-unchecked-disabled: var(--gm-component-input-color-bg-unchecked-disabled);
+  
+  /* border color - checked */
+  --gm-btn-radio-color-border-checked: var(--gm-component-input-color-border-checked-default);
+  --gm-btn-radio-color-border-checked-hover: var(--gm-component-input-color-border-checked-hover);
+  --gm-btn-radio-color-border-checked-focus: var(--gm-component-input-color-border-checked-focus);
+  --gm-btn-radio-color-border-checked-active: var(--gm-component-input-color-border-checked-active);
+  --gm-btn-radio-color-border-checked-disabled: var(--gm-component-input-color-border-checked-disabled);
+  
+  /* background color - checked */
+  --gm-btn-radio-color-bg-checked: var(--gm-component-input-color-bg-checked);
+  --gm-btn-radio-color-bg-checked-hover: var(--gm-component-input-color-bg-checked-hover);
+  --gm-btn-radio-color-bg-checked-focus: var(--gm-component-input-color-bg-checked-focus);
+  --gm-btn-radio-color-bg-checked-active: var(--gm-component-input-color-bg-checked-active);
+  --gm-btn-radio-color-bg-checked-disabled: var(--gm-component-input-color-bg-checked-disabled);
+  
+  /* background color - disabled */
+  --gm-btn-radio-color-bg-checked-disabled: var(--gm-component-input-color-bg-checked-disabled);
+  
+  /* border width */
+  --gm-btn-radio-border-width: var(--gm-component-input-border-width);
+  --gm-btn-radio-border-width-unchecked-hover: var(--gm-component-input-border-width-hover);
+  
+  /* checked fill gap */
+  --gm-btn-radio-fill-gap: var(--gm-component-input-gap);
+
+  /* radius */
+  --gm-btn-radio-border-radius: var(--gm-border-rad-input);
+    
+  /* size */
+  --gm-btn-radio-input-size: var(--gm-component-input-size);
+  
+  /* spacing */
+  --gm-btn-radio-sp-input-to-label: var(--gm-component-input-sp-to-label);
+  --gm-btn-radio-sp-block: var(--gm-component-input-sp-block);
+  --gm-btn-radio-sp-inline: var(--gm-component-input-sp-inline);
+  
+  /* focus indicator */
+  --gm-btn-radio-focus-indicator-shadow: var(--gm-component-focus-indicator-shadow);
+}
+
+
+
+/********* ********* ********* ********* *********/
+/*** RADIO specific - Responses list ***/
+.gm .lrn.lrn-assess .lrn_mcq .lrn_mcqgroup  {
+  margin: 0;
+  padding: 0;
+  
+  margin-block: var(--gm-lrn-stimulus-sp-block);
+  margin-inline: var(--gm-cortex-sp-medium);
+  
+  .lrn-mcq-option {
+    position: relative;
+    margin-block: var(--gm-btn-radio-sp-block);
+    margin-inline: var(--gm-btn-radio-sp-inline);
+  }
+  
+  .lrn-label {
+    position: relative;
+    font-size: var(--gm-component-text-size);
+    padding: 0;
+    margin: 0;
+    padding-inline-start: calc(var(--gm-btn-radio-input-size) // account for input width
+                              + (var(--gm-component-input-safe-area) * 2) // account for input safe area horizontal space
+                              + var(--gm-btn-radio-sp-input-to-label)); // 8px inline start, 12px total incl safe area
+  }
+  
+  /* Radio input */
+  .lrn-input {
+    position: absolute;
+    display: inline-flex;
+    margin: auto;
+    left: 0;
+    z-index: 1;
+    
+    width: var(--gm-btn-radio-input-size);
+    height: var(--gm-btn-radio-input-size);
+    padding: var(--gm-component-input-safe-area);
+    box-sizing: border-box;
+    
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    
+    border-radius: var(--gm-btn-radio-border-radius); 
+    border-width: var(--gm-btn-radio-border-width);
+    border-style: solid;
+    border-color: var(--gm-btn-radio-color-border-default);
+    
+    &:dir(rtl) {
+      right: 0;
+    }
+  
+    // checked dot, stand-in for atomic div class = RadioButtonstyled__StyledRadioBtn-sc-i040i4-4 iDNRLa radio-radio
+    &::after {
+      content: "";
+      position: absolute;
+  
+      width: calc(100% - (var(--gm-btn-radio-border-width) * 2));
+      height: calc(100% - (var(--gm-btn-radio-border-width) * 2));
+  
+      box-sizing: border-box;
+      margin-block-start: var(--gm-btn-radio-border-width);
+      margin-inline-start: var(--gm-btn-radio-border-width);
+      cursor: pointer;
+      
+      display: block;
+      border-radius: var(--gm-btn-radio-border-radius);
+      background-color: var(--gm-btn-radio-color-bg-checked);
+      transform: scale(0);
+      transition: var(--gm-atomic-transition);
+    }
+
+    &:hover:not(:checked) {
+      border-width: var(--gm-btn-radio-border-width-unchecked-hover);
+      border-color: var(--gm-btn-radio-border-color-hover);
+    }
+     
+    &:hover:checked {
+      border-width: var(--gm-btn-radio-border-width);
+      border-color: var(--gm-btn-radio-border-color-hover);
+    }
+  
+    &.is-focused:not(:checked),
+    &:focus-visible:not(:checked) {
+      box-shadow: var(--gm-btn-radio-focus-indicator-shadow);
+      
+      &::after {
+        //box-shadow: var(--gm-btn-radio-focus-indicator-shadow);
+      }
+    }
+
+    &.is-focused:checked,
+    &:focus-visible:checked {
+      box-shadow: var(--gm-btn-radio-focus-indicator-shadow);
+      
+      &::after {
+        //box-shadow: var(--gm-btn-radio-focus-indicator-shadow);
+      }
+    }
+    
+    &:disabled:not(:checked),
+    &.is-disabled:not(:checked),
+    &:disabled:hover:not(:checked),
+    &.is-disabled:hover:not(:checked) {
+      pointer-events: none;
+      border-color: var(--gm-btn-radio-color-border-disabled);
+    }
+      
+    &:checked {
+      outline: none;
+      appearance: none;
+    }
+    
+    &:checked::after {
+      transform: scale(1);
+    }
+  }
+
+  /* Radio Group Variants */
+    &.lrn_mcqgroup-horizontal {
+
+  }
+}

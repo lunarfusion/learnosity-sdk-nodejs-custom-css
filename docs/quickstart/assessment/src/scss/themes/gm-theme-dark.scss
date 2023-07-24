@@ -1,0 +1,73 @@
+/* apply dark theme automatically if prefers dark mode */
+/* let's figure out how not to repeat this whole chunk in the media query AND the theme class */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gm-basebg: hsl(0, 0%, 10%);
+    --gm-bg-2: hsl(0, 0%, 30%);
+    
+    --gm-color-text: hsl(0, 0%, 90%);
+    --gm-focus-indicator-color: var(--gm-beige160); // per Cortex
+
+    /* default unchecked */
+    --gm-radio-button-border-color: var(--gm-beige160);
+    --gm-radio-button-color-border-hover: var(--gm-white);
+    --gm-radio-button-color-border-focus: var(--gm-beige160);
+    --gm-radio-button-color-border-active: var(--gm-beige160);
+
+    --gm-radio-button-background-color-unchecked: transparent;
+    --gm-radio-button-background-color-unchecked-hover: var(--gm-n100);
+    --gm-radio-button-background-color-unchecked-focus: transparent;
+    --gm-radio-button-background-color-unchecked-active: var(--gm-n80);
+
+    /* selected */
+    --gm-radio-button-color-border-checked: var(--gm-beige180);
+    --gm-radio-button-color-border-checked-hover: var(--gm-beige180);
+    --gm-radio-button-color-border-checked-focus: var(--gm-beige160);
+    --gm-radio-button-color-border-checked-active: var(--gm-beige160);
+
+    --gm-radio-button-background-color-checked: var(--gm-white);
+    --gm-radio-button-background-color-checked-hover: var(--gm-beige60);
+    --gm-radio-button-background-color-checked-focus: var(--gm-white);
+    --gm-radio-button-background-color-checked-active: var(--gm-beige120);
+
+    /* disabled */
+    --gm-radio-button-color-border-disabled: var(--gm-beige160);
+    --gm-radio-button-background-color-disabled: var(--gm-beige160);
+  }
+}
+
+/* Themes added onto html, or in the case of codepen, onto main-container*/
+/* DARK THEME */
+.theme-dark {
+  --gm-basebg: hsl(0, 0%, 10%);
+  --gm-bg-2: hsl(0, 0%, 20%);
+  
+  --gm-color-text: hsl(0, 0%, 90%);
+  --gm-focus-indicator-color: var(--gm-beige160); // per Cortex
+
+  /* default unchecked */
+  --gm-radio-button-border-color: var(--gm-beige160);
+  --gm-radio-button-color-border-hover: var(--gm-white);
+  --gm-radio-button-color-border-focus: var(--gm-beige160);
+  --gm-radio-button-color-border-active: var(--gm-beige160);
+
+  --gm-radio-button-background-color-unchecked: transparent;
+  --gm-radio-button-background-color-unchecked-hover: var(--gm-n100);
+  --gm-radio-button-background-color-unchecked-focus: transparent;
+  --gm-radio-button-background-color-unchecked-active: var(--gm-n80);
+
+  /* selected */
+  --gm-radio-button-color-border-checked: var(--gm-beige180);
+  --gm-radio-button-color-border-checked-hover: var(--gm-beige180);
+  --gm-radio-button-color-border-checked-focus: var(--gm-beige160);
+  --gm-radio-button-color-border-checked-active: var(--gm-beige160);
+
+  --gm-radio-button-background-color-checked: var(--gm-white);
+  --gm-radio-button-background-color-checked-hover: var(--gm-beige60);
+  --gm-radio-button-background-color-checked-focus: var(--gm-white);
+  --gm-radio-button-background-color-checked-active: var(--gm-beige120);
+
+  /* disabled */
+  --gm-radio-button-color-border-disabled: var(--gm-beige160);
+  --gm-radio-button-background-color-disabled: var(--gm-beige160);
+}

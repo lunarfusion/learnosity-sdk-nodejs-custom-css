@@ -1,0 +1,17 @@
+.gm .lrn_btn_drag {
+  --gm-draggable-color-bg-default: var(--gm-beige60);
+  
+  --gm-draggable-color-border-default: var(--gm-beige180);
+}
+
+
+
+
+.gm .lrn .lrn_btn_drag {
+  background-color: var(--gm-draggable-color-bg-default);
+  border: 1px solid var(--gm-draggable-color-border-default);
+  
+  &:hover {
+    border: 1px dashed var(--gm-draggable-color-border-default);
+  }
+}

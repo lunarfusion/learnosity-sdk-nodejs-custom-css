@@ -1,0 +1,84 @@
+/****** GLOBALS - named for figma or atomic sourcing ******/
+:root {
+  /*** figma ***/
+  --gm-cortex-sp-extra-extra-small: 4px;
+  --gm-cortex-sp-extra-small: 8px;
+  --gm-cortex-sp-small: 12px;
+  --gm-cortex-sp-medium: 16px;
+  --gm-cortex-sp-large: 24px;
+  --gm-cortex-sp-extra-large: 32px;
+  --gm-cortex-sp-extra-extra-large: 48px;
+  --gm-cortex-sp-extra-extra-extra-large: 56px;
+  --gm-cortex-sp-extra-extra-extra-extra-large: 80px;
+  
+  /*** atomic ***/
+  --gm-atomic-sp-1: 10px;
+  --gm-atomic-sp-2: 20px;
+  --gm-atomic-sp-3: 30px;
+  --gm-atomic-sp-4: 40px;
+  
+  /*** student experience ***/
+  --gm-student-exp-sp-01: 40px;
+  --gm-student-exp-sp-02: 56px;
+}
+
+/****** ALIASES - named for general component usage ******/
+:root {
+  /*** learnosity ***/
+  --gm-lrn-stimulus-sp-block: var(--gm-cortex-sp-small);
+  
+  /*** component size ***/
+  --gm-component-size-sm: var(--gm-atomic-sp-3);
+  --gm-component-size-md: var(--gm-atomic-sp-4);
+  
+  /*** component spacing ***/ 
+  --gm-component-sp-interior-block: var(--gm-atomic-sp-1); // naming for padding?
+  --gm-component-sp-interior-block-start: var(--gm-atomic-sp-1); // naming for padding?
+  --gm-component-sp-interior-block-end: var(--gm-atomic-sp-1); // naming for padding?
+  --gm-component-sp-interior-inline: var(--gm-cortex-sp-medium); // naming for padding?
+  --gm-component-sp-interior-inline-start: var(--gm-cortex-sp-medium); // naming for padding?
+  --gm-component-sp-interior-inline-end: var(--gm-cortex-sp-medium); // naming for padding?
+  
+  // --gm-component-sp-exterior-block: var(--gm-atomic-sp-1); // naming for margin?
+  // --gm-component-sp-exterior-block-start: var(--gm-atomic-sp-1); // naming for margin?
+  // --gm-component-sp-exterior-block-end: var(--gm-atomic-sp-1); // naming for margin?
+  // --gm-component-sp-exterior-inline: var(--gm-atomic-sp-1); // naming for margin?
+  // --gm-component-sp-exterior-inline-start: var(--gm-atomic-sp-1); // naming for margin?
+  // --gm-component-sp-exterior-inline-end: var(--gm-atomic-sp-1); // naming for margin?
+  
+  /*** input size ***/
+  --gm-component-input-size: var(--gm-cortex-sp-medium);
+  --gm-component-input-gap: 1px;
+  --gm-component-input-border-width: 1px;
+  --gm-component-input-border-width-hover: 2px;
+  
+  /*** input spacing ***/
+  --gm-component-input-safe-area: var(--gm-cortex-sp-extra-extra-small); // safe area around radio buttons
+  --gm-component-input-sp-to-label: var(--gm-cortex-sp-extra-small);
+  --gm-component-input-sp-block: var(--gm-cortex-sp-medium);
+  --gm-component-input-sp-inline: var(--gm-cortex-sp-medium);
+}
+
+
+.theme-student-experience {
+  /*** component size ***/
+  --gm-btn-block-size-small: var(--gm-student-exp-sp-01);
+  --gm-component-size-md: var(--gm-student-exp-sp-02);
+}
+
+
+/*** Theme for younger audiences ***/
+.theme-age-k2 {
+  /*** LEARNOSITY General ***/
+  --gm-lrn-stimulus-sp-block: var(--gm-cortex-sp-medium);
+  --gm-lrn-radio-option-block-size: var(--gm-cortex-sp-large);
+
+  --gm-component-size-sm: 50px; // normal buttons
+  --gm-component-size-md: 70px; // small buttons
+  
+  /* INPUTS */
+  --gm-component-input-size: var(--gm-cortex-sp-large);
+  --gm-component-sp-input-to-label: var(--gm-cortex-sp-medium);
+  --gm-component-input-sp-block: var(--gm-cortex-sp-extra-large);
+  --gm-component-input-sp-inline: var(--gm-cortex-sp-large);
+}

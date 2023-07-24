@@ -1,0 +1,61 @@
+/****** GLOBALS - named for figma or atomic sourcing ******/
+:root {
+  /*** figma shadows ***/
+  --gm-cortex-shadow-inset-02: 0px -2px 4px 0px rgba(96, 96, 108, 0.10) inset, 
+                               0px 0px 2px 0px rgba(0, 0, 0, 0.06) inset;
+  
+  --gm-cortex-shadow-00: none;
+  --gm-cortex-shadow-01: 0px 2px 2px 0px rgba(96, 96, 108, 0.04), 
+                         0px 0px 2px 0px rgba(0, 0, 0, 0.04);
+  
+  --gm-cortex-shadow-02: 0px 2px 4px 0px rgba(96, 96, 108, 0.10), 
+                         0px 0px 2px 0px rgba(0, 0, 0, 0.04);
+  
+  --gm-cortex-shadow-03: 0px 4px 6px 0px rgba(96, 96, 108, 0.10), 
+                        0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+  
+  --gm-cortex-shadow-04: 0px 6px 8px 0px rgba(96, 96, 108, 0.12), 
+                         0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+  
+  --gm-cortex-shadow-05: 0px 8px 12px 0px rgba(96, 96, 108, 0.16), 
+                         0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+  
+  --gm-cortex-shadow-06: 0px 10px 16px 0px rgba(96, 96, 108, 0.24), 
+                         0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  
+  /*** atomic shadows - WIP ***/
+  --gm-atomic-shadow-01: 0px 0px 0px 1px var(--gm-beige180);
+  --gm-atomic-shadow-02: 0px -4px 0 0 #407177 inset;
+  --gm-atomic-shadow-03: #FFFFFF 0px 0px 0px 1px,#706C5C 0px 0px 0px 2px,0px -4px 0 0 #407177 inset;
+  --gm-atomic-shadow-04: #FFFFFF 0px 0px 0px 1px,#706C5C 0px 0px 0px 2px;
+  --gm-atomic-shadow-05: inset 0px 0px 1px rgba(0, 0, 0, 0.06), inset 0px -1px 4px rgba(96, 96, 108, 0.06);
+  
+  /*** student experience shadows ***/
+  --gm-student-exp-shadow-01: rgba(7, 33, 45, 0.1) 0px 0px 10px 0px; // withSmallCardShadow
+  --gm-student-exp-shadow-02: 0px 0px 33px 0px rgba(100, 146, 149, 0.14); //withMainContainerShadow
+  --gm-student-exp-shadow-03: 0px 0px 10px 0px rgba(7,33,45,0.1); // same as small card, different formatting
+  --gm-student-exp-shadow-04: 0px 12px 16px rgba(0,0,0,0.1);  
+  --gm-student-exp-shadow-05: #F2F4ED 0px 0px 0px 0px,#706C5C 0px 0px 0px calc(1px + 0px);
+  --gm-student-exp-shadow-06: #F2F4ED 0px 0px 0px 0px,#706C5C 0px 0px 0px calc(2px + 0px); 
+  --gm-student-exp-shadow-07: #F2F4ED 0px 0px 0px 0px,#CCCCCC 0px 0px 0px calc(1px + 0px);
+  --gm-student-exp-shadow-08: #F2F4ED 0px 0px 0px 2px,#706C5C 0px 0px 0px 3px;
+  --gm-student-exp-shadow-09: #706C5C 0px 0px 0px 1px ,#FFF 0px 0px 0px 3px ,#09212C 0px 0px 0px 5px;
+  --gm-student-exp-shadow-10: #706C5C 0px 0px 0px 1px ,#FFF 0px 0px 0px 3px ,#706C5C 0px 0px 0px 5px;
+  --gm-student-exp-shadow-11: #706C5C 0px 0px 0px 1px ,#FFF 0px 0px 0px 2px ,#000 0px 0px 0px 4px;
+  --gm-student-exp-shadow-12: #706C5C 0px 0px 0px 1px inset;
+  --gm-student-exp-shadow-13: #FFFFFF 0px 0px 0px 2px,#706C5C 0px 0px 0px 3px;
+  --gm-student-exp-shadow-14: 0px 4px 8px 0px #b8bdc2;
+  --gm-student-exp-shadow-15: none;
+}
+
+/****** ALIASES - named for general component usage ******/
+:root {
+  --gm-shadow-card: none; // ?
+  --gm-shadow-container: none; // ?
+}
+
+/****** STUDENT EXPERIENCE overrides ******/
+.theme-student-experience {
+  --gm-shadow-card: var(--gm-student-exp-shadow-01);
+  --gm-shadow-container: var(--gm-student-exp-shadow-02);
+}

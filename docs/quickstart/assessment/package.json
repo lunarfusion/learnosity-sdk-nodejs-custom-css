@@ -1,0 +1,32 @@
+{
+  "name": "Learnosity Node - Monet's Custom CSS",
+  "version": "1.0.0",
+  "description": "Learnosity CSS Customization Research",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && npm run watch",
+    "build": "npm run sass",
+    "watch": "node tasks/watch.js",
+    "sass": "sass src/:public/css/ --style=compressed",
+    "postsass": "postcss public/css/style.css --use autoprefixer -d public/css/",
+    "lint:sass": "stylelint src/* --color --formatter verbose"
+  },
+  "devDependencies": {
+    "stylelint": "^14.6.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard-scss": "^3.0.0"
+  },
+  "dependencies": {
+    "@greatminds/dp-icominds-lib": "^2.67.1",
+    "autoprefixer": "^10.4.13",
+    "chokidar": "^3.5.3",
+    "node-sass": "^7.0.1",
+    "onchange": "^7.1.0",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "postcss-scss": "^4.0.3",
+    "shelljs": "^0.8.5",
+    "uuid": "^8.3.2"
+  },
+  "author": "monet"
+}

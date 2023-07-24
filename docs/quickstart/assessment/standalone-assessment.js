@@ -20,6 +20,10 @@ const user_id = uuid.v4();
 const session_id = uuid.v4();
 const domain = 'localhost';
 
+// Monet's custom CSS - load css file from quickstart/assessment/public
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.get('/', function (req, res) {
     const learnositySdk = new Learnosity(); // Instantiate the SDK
     // Items API configuration parameters.
