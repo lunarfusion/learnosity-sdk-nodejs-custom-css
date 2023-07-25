@@ -2,7 +2,7 @@
 body.gm {
   margin: 0;
   padding: 2rem;
-  font-size: var(--gm-base-text-size);
+  font-size: var(--gm-text-size-base);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Circular Std";
@@ -25,23 +25,20 @@ body.gm {
 /********* Outer app container, theme color applied here *********/
 #app-container {
   color: var(--gm-color-text);
-  background-color: var(--gm-bg-2);
+  background-color: var(--gm-color-bg-2);
   color: var(--gm-color-text);
   padding: 1rem;
 }
 
 /********* Inner questions container, theme size is applied here *********/
 #gm-learnosity-assessment-wrapper {
-
-}
-
-
-#gm-learnosity-assessment-wrapper .lrn .app-layout {
-  display: grid;
-  row-gap: 0;
-  column-gap: 0;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  .lrn .app-layout {
+    display: grid;
+    row-gap: 0;
+    column-gap: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
 }
 
 .gm .lrn.lrn-assess .lrn-group-top {
@@ -98,7 +95,7 @@ body.gm {
       /* question content */
       .slides-control {
         grid-row: 2;
-        background-color: var(--gm-basebg);
+        background-color: var(--gm-color-bg-base);
         padding: 1rem;
         border-radius: var(--gm-border-rad-container);
         box-shadow: var(--gm-shadow-container);
@@ -162,7 +159,7 @@ body.gm {
   position: relative;
   
   span {
-    background: var(--gm-component-color-bg-primary-default);
+    background: var(--gm-color-bg-component-primary-default);
   }
 }
 
@@ -182,7 +179,7 @@ body.gm {
 /*********  Question Content *********/
 .lrn_stimulus {
   &_content {
-    font-size: var(--gm-component-text-size-lrn-question);
+    font-size: var(--gm-text-size-component-lrn-question);
     font-weight: 600;
   }
 }
@@ -232,7 +229,7 @@ body.gm {
   
   /* vertical line before active item */
   &::before {
-    background-color: var(--gm-component-color-bg-primary-default);
+    background-color: var(--gm-color-bg-component-primary-default);
   }  
   
   &:hover {
@@ -244,7 +241,7 @@ body.gm {
 .gm .lrn.lrn-assess .lrn-vertical-toc .pagination-active a { 
   /* triangle before active item */
   &::after {
-    border-color: transparent transparent transparent var(--gm-component-color-bg-primary-default);
+    border-color: transparent transparent transparent var(--gm-color-bg-component-primary-default);
   }
 }
 

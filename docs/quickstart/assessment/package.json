@@ -17,6 +17,7 @@
     "stylelint-config-standard-scss": "^3.0.0"
   },
   "dependencies": {
+    "@greatminds/dp-atomic-ui-lib": "3.9.0",
     "@greatminds/dp-icominds-lib": "^2.67.1",
     "autoprefixer": "^10.4.13",
     "chokidar": "^3.5.3",

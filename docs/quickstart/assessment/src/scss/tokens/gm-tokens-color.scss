@@ -52,97 +52,97 @@
 /****** ALIASES - named for general component usage ******/
 :root {
   /* background colors */
-  --gm-basebg: hsl(0, 0%, 100%);
-  --gm-bg-2: var(--gm-beige60); //student ex bg
+  --gm-color-bg-base: hsl(0, 0%, 100%);
+  --gm-color-bg-2: var(--gm-beige60); //student ex bg
   
   /* text colors */
   --gm-color-text: hsl(0, 0%, 10%);
   
   /** Component text color defaults **/
-  --gm-component-color-text-primary-default: var(--gm-white);
-  --gm-component-color-text-primary-hover: var(--gm-white);
-  --gm-component-color-text-primary-focus: var(--gm-white);
-  --gm-component-color-text-primary-active: var(--gm-white);
+  --gm-color-text-component-primary-default: var(--gm-white);
+  --gm-color-text-component-primary-hover: var(--gm-white);
+  --gm-color-text-component-primary-focus: var(--gm-white);
+  --gm-color-text-component-primary-active: var(--gm-white);
   
-  --gm-component-color-text-ghost-default: var(--gm-n100);
-  --gm-component-color-text-disabled-default: var(--gm-atomic-gray);
+  --gm-color-text-component-ghost-default: var(--gm-n100);
+  --gm-color-text-component-disabled-default: var(--gm-atomic-gray);
   
   /* Icon color defaults */
-  --gm-component-icon-default: var(--gm-prbase);
+  --gm-color-icon-default: var(--gm-prbase);
   
   /** Component primary background color **/
-  --gm-component-color-bg-primary-default: var(--gm-prbase);
-  --gm-component-color-bg-primary-hover:  var(--gm-pr170);
-  --gm-component-color-bg-primary-focus: var(--gm-prbase);
-  --gm-component-color-bg-primary-active: var(--gm-prbase);
-  --gm-component-color-bg-primary-disabled: var(--gm-n10);
+  --gm-color-bg-component-primary-default: var(--gm-prbase);
+  --gm-color-bg-component-primary-hover:  var(--gm-pr170);
+  --gm-color-bg-component-primary-focus: var(--gm-prbase);
+  --gm-color-bg-component-primary-active: var(--gm-prbase);
+  --gm-color-bg-component-primary-disabled: var(--gm-n10);
   
   /* ghost */
-  --gm-component-color-bg-ghost-default: transparent;
-  --gm-component-color-bg-ghost-hover: transparent;
-  --gm-component-color-bg-ghost-focus: transparent;
-  --gm-component-color-bg-ghost-active: var(--gm-beige40);
-  --gm-component-color-bg-ghost-disabled: var(--gm-n10);
+  --gm-color-bg-component-ghost-default: transparent;
+  --gm-color-bg-component-ghost-hover: transparent;
+  --gm-color-bg-component-ghost-focus: transparent;
+  --gm-color-bg-component-ghost-active: var(--gm-beige40);
+  --gm-color-bg-component-ghost-disabled: var(--gm-n10);
   
   /** Component primary border color **/
-  --gm-component-color-border-primary-default: var(--gm-beige180);
-  --gm-component-color-border-primary-hover: var(--gm-n100);
-  --gm-component-color-border-primary-focus: var(--gm-beige180);
-  --gm-component-color-border-primary-active: var(--gm-n100);
-  --gm-component-color-border-primary-disabled: var(--gm-n10);
+  --gm-color-border-component-primary-default: var(--gm-beige180);
+  --gm-color-border-component-primary-hover: var(--gm-n100);
+  --gm-color-border-component-primary-focus: var(--gm-beige180);
+  --gm-color-border-component-primary-active: var(--gm-n100);
+  --gm-color-border-component-primary-disabled: var(--gm-n10);
   
   /* ghost */
-  --gm-component-color-border-ghost-default: var(--gm-beige180);
-  --gm-component-color-border-ghost-hover: var(--gm-n100);
-  --gm-component-color-border-ghost-focus: var(--gm-beige180);
-  --gm-component-color-border-ghost-active: var(--gm-n100);
-  --gm-component-color-border-ghost-disabled: var(--gm-n10);
+  --gm-color-border-component-ghost-default: var(--gm-beige180);
+  --gm-color-border-component-ghost-hover: var(--gm-n100);
+  --gm-color-border-component-ghost-focus: var(--gm-beige180);
+  --gm-color-border-component-ghost-active: var(--gm-n100);
+  --gm-color-border-component-ghost-disabled: var(--gm-n10);
   
   /* radio specifics */
-  --gm-component-input-color-border-unchecked-default: var(--gm-beige180);
-  --gm-component-input-color-border-unchecked-hover: var(--gm-n100);
-  --gm-component-input-color-border-unchecked-focus: var(--gm-beige180);
-  --gm-component-input-color-border-unchecked-active: var(--gm-n100);
-  --gm-component-input-color-border-unchecked-disabled: var(--gm-beige180);
+  --gm-color-border-component-input-unchecked-default: var(--gm-beige180);
+  --gm-color-border-component-input-unchecked-hover: var(--gm-n100);
+  --gm-color-border-component-input-unchecked-focus: var(--gm-beige180);
+  --gm-color-border-component-input-unchecked-active: var(--gm-n100);
+  --gm-color-border-component-input-unchecked-disabled: var(--gm-beige180);
   
-  --gm-component-input-color-border-checked-default: var(--gm-beige180);
-  --gm-component-input-color-border-checked-hover: var(--gm-n100);
-  --gm-component-input-color-border-checked-focus: var(--gm-beige180);
-  --gm-component-input-color-border-checked-active: var(--gm-n100);
-  --gm-component-input-color-border-checked-disabled: var(--gm-beige180);
+  --gm-color-border-component-input-checked-default: var(--gm-beige180);
+  --gm-color-border-component-input-checked-hover: var(--gm-n100);
+  --gm-color-border-component-input-checked-focus: var(--gm-beige180);
+  --gm-color-border-component-input-checked-active: var(--gm-n100);
+  --gm-color-border-component-input-checked-disabled: var(--gm-beige180);
   
-  --gm-component-input-color-bg-checked: var(--gm-prbase);
-  --gm-component-input-color-bg-checked-hover: var(--gm-prbase);
-  --gm-component-input-color-bg-checked-focus: var(--gm-prbase);
-  --gm-component-input-color-bg-checked-active: var(--gm-pr180);
-  --gm-component-input-color-bg-checked-disabled: var(--gm-n40);
+  --gm-color-bg-component-input-checked: var(--gm-prbase);
+  --gm-color-bg-component-input-checked-hover: var(--gm-prbase);
+  --gm-color-bg-component-input-checked-focus: var(--gm-prbase);
+  --gm-color-bg-component-input-checked-active: var(--gm-pr180);
+  --gm-color-bg-component-input-checked-disabled: var(--gm-n40);
   
-  --gm-component-input-color-bg-unchecked-disabled: linear-gradient(45deg, transparent 45%, 
-                                                  var(--gm-component-input-color-border-disabled) 46%, 
-                                                  var(--gm-component-input-color-border-disabled) calc(46% + var(--gm-component-border-width)), 
+  --gm-color-bg-component-input-unchecked-disabled: linear-gradient(45deg, transparent 45%, 
+                                                  var(--gm-color-border-component-input-disabled) 46%, 
+                                                  var(--gm-color-border-component-input-disabled) calc(46% + var(--gm-component-border-width)), 
                                                   transparent calc(46% + var(--gm-component-border-width)));
 }
 
 .theme-student-experience {
   /* background colors */
-  --gm-basebg: hsl(0, 0%, 100%);
-  --gm-bg-2: var(--gm-beige60); //student ex bg
+  --gm-color-bg-base: hsl(0, 0%, 100%);
+  --gm-color-bg-2: var(--gm-beige60); //student ex bg
 
-  --gm-component-color-text-primary-default: var(--gm-black);
-  --gm-component-color-text-primary-hover: var(--gm-black);
-  --gm-component-color-text-primary-focus: var(--gm-black);
-  --gm-component-color-text-primary-active: var(--gm-black);
+  --gm-color-text-component-primary-default: var(--gm-black);
+  --gm-color-text-component-primary-hover: var(--gm-black);
+  --gm-color-text-component-primary-focus: var(--gm-black);
+  --gm-color-text-component-primary-active: var(--gm-black);
   
-  --gm-component-color-bg-primary-default: var(--gm-olive100);
-  --gm-component-color-bg-primary-hover: var(--gm-olive60);
-  --gm-component-color-bg-primary-focus: var(--gm-olive60);
-  --gm-component-color-bg-primary-active: var(--gm-olive120);
+  --gm-color-bg-component-primary-default: var(--gm-olive100);
+  --gm-color-bg-component-primary-hover: var(--gm-olive60);
+  --gm-color-bg-component-primary-focus: var(--gm-olive60);
+  --gm-color-bg-component-primary-active: var(--gm-olive120);
   
-  --gm-component-input-color-bg-checked: var(--gm-olive100);
-  --gm-component-input-color-bg-checked-hover: var(--gm-olive60);
-  --gm-component-input-color-bg-checked-focus: var(--gm-olive60);
-  --gm-component-input-color-bg-checked-active: var(--gm-olive120);
+  --gm-color-bg-component-input-checked: var(--gm-olive100);
+  --gm-color-bg-component-input-checked-hover: var(--gm-olive60);
+  --gm-color-bg-component-input-checked-focus: var(--gm-olive60);
+  --gm-color-bg-component-input-checked-active: var(--gm-olive120);
   
-  --gm-component-icon-default: var(--gm-olive140);
+  --gm-color-icon-default: var(--gm-olive140);
 }
 

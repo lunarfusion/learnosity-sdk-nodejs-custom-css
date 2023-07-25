@@ -4,17 +4,8 @@
 @import "scss/tokens/gm-tokens";
 @import "scss/gm-learnosity-general";
 
-// themes
-@import "scss/themes/gm-theme-dark";
-@import "scss/themes/gm-theme-k2";
-
 // Components
 @import "scss/components/gm-button";
 @import "scss/components/gm-combobox";
 @import "scss/components/gm-radio-group";
 @import "scss/components/gm-draggable";
-
-
-body.gm {
-
-}

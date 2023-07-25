@@ -29,14 +29,8 @@
   /****** TRANSITION AND ANIMATION ******/
   /*** atomic transition ***/
   --gm-atomic-transition: transform 0.15s ease 0s;
-  
 
   /****** FOCUS Indicators ******/
-  // --gm-focus-indicator-thickness: 1px;
-  // --gm-focus-indicator-gap: 3px;
-  --gm-focus-indicator-color-border: var(--gm-beige180);
-  --gm-focus-indicator-color-bg: var(--gm-beige40);
-  
   --gm-atomic-focus-indicator-shadow: var(--gm-white) 0px 0px 0px 1px, 
                                       var(--gm-beige180) 0px 0px 0px 2px;
 
@@ -60,19 +54,19 @@
   --gm-border-rad-card: none; // ?
   --gm-border-rad-input: var(--gm-atomic-border-rad-11); // circle
   
-  --gm-component-border-radius-1: var(--gm-atomic-border-rad-02);
+  --gm-border-radius-component: var(--gm-atomic-border-rad-02);
   
   /* text size */
-  --gm-base-text-size: var(--gm-cortex-text-size-md);
+  --gm-text-size-base: var(--gm-cortex-text-size-md);
   
   /* learnosity text size */
-  --gm-component-text-size-lrn-question: var(--gm-cortex-text-size-xl);
+  --gm-text-size-component-lrn-question: var(--gm-cortex-text-size-xl);
   
-  --gm-component-text-size: var(--gm-cortex-text-size-sm);
-  --gm-component-text-size-label: var(--gm-cortex-text-size-md);
+  --gm-text-size-component: var(--gm-cortex-text-size-sm);
+  --gm-text-size-component-label: var(--gm-cortex-text-size-md);
   
   /* focus indicator */
-  --gm-component-focus-indicator-shadow: var(--gm-atomic-focus-indicator-shadow);
+  --gm-shadow-focus-indicator: var(--gm-atomic-focus-indicator-shadow);
 }
 
 /****** STUDENT EXPERIENCE overrides ******/
@@ -80,16 +74,16 @@
   --gm-border-rad-container: var(--gm-student-experience-border-rad-11);
   --gm-border-rad-card: var(--gm-student-experience-border-rad-01);
   
-  --gm-component-border-radius-1: var(--gm-student-experience-border-rad-10);
+  --gm-border-radius-component: var(--gm-student-experience-border-rad-10);
 }
 
 
 /****** K-2 overrides ******/
 .theme-age-k2 {
-  --gm-base-text-size: var(--gm-cortex-text-size-lg);
+  --gm-text-size-base: var(--gm-cortex-text-size-lg);
   
   /* learnosity text size */
-  --gm-component-text-size-lrn-question: var(--gm-cortex-text-size-x2l);
+  --gm-text-size-component-lrn-question: var(--gm-cortex-text-size-x2l);
   
-  --gm-component-text-size: var(--gm-cortex-text-size-lg);
+  --gm-text-size-component: var(--gm-cortex-text-size-lg);
 }

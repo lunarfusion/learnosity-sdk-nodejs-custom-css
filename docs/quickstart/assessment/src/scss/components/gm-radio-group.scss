@@ -1,82 +1,78 @@
+/****** Set component aliases ******/
 .gm .lrn.lrn-assess .lrn_mcq {
   /* border color - unchecked */
-  --gm-btn-radio-color-border-default: var(--gm-component-input-color-border-unchecked-default);
-  --gm-btn-radio-color-border-hover: var(--gm-component-input-color-border-unchecked-hover);
-  --gm-btn-radio-color-border-focus: var(--gm-component-input-color-border-unchecked-focus);
-  --gm-btn-radio-color-border-active: var(--gm-component-input-color-border-unchecked-active);
-  --gm-btn-radio-color-border-disabled: var(--gm-component-input-color-border-unchecked-disabled);
+  --gm-color-border-btn-radio-default: var(--gm-color-border-component-input-unchecked-default);
+  --gm-color-border-btn-radio-hover: var(--gm-color-border-component-input-unchecked-hover);
+  --gm-color-border-btn-radio-focus: var(--gm-color-border-component-input-unchecked-focus);
+  --gm-color-border-btn-radio-active: var(--gm-color-border-component-input-unchecked-active);
+  --gm-color-border-btn-radio-disabled: var(--gm-color-border-component-input-unchecked-disabled);
   
   /* background color - unchecked */
-  --gm-btn-radio-color-bg-unchecked: transparent;
-  --gm-btn-radio-color-bg-unchecked-hover: var(--gm-white);
-  --gm-btn-radio-color-bg-unchecked-focus: transparent;
-  --gm-btn-radio-color-bg-unchecked-active: var(--gm-beige40);
-  --gm-btn-radio-color-bg-unchecked-disabled: var(--gm-component-input-color-bg-unchecked-disabled);
+  --gm-color-bg-btn-radio-unchecked: transparent;
+  --gm-color-bg-btn-radio-unchecked-hover: var(--gm-white);
+  --gm-color-bg-btn-radio-unchecked-focus: transparent;
+  --gm-color-bg-btn-radio-unchecked-active: var(--gm-beige40);
+  --gm-color-bg-btn-radio-unchecked-disabled: var(--gm-color-bg-component-input-unchecked-disabled);
   
   /* border color - checked */
-  --gm-btn-radio-color-border-checked: var(--gm-component-input-color-border-checked-default);
-  --gm-btn-radio-color-border-checked-hover: var(--gm-component-input-color-border-checked-hover);
-  --gm-btn-radio-color-border-checked-focus: var(--gm-component-input-color-border-checked-focus);
-  --gm-btn-radio-color-border-checked-active: var(--gm-component-input-color-border-checked-active);
-  --gm-btn-radio-color-border-checked-disabled: var(--gm-component-input-color-border-checked-disabled);
+  --gm-color-border-btn-radio-checked: var(--gm-color-border-component-input-checked-default);
+  --gm-color-border-btn-radio-checked-hover: var(--gm-color-border-component-input-checked-hover);
+  --gm-color-border-btn-radio-checked-focus: var(--gm-color-border-component-input-checked-focus);
+  --gm-color-border-btn-radio-checked-active: var(--gm-color-border-component-input-checked-active);
+  --gm-color-border-btn-radio-checked-disabled: var(--gm-color-border-component-input-checked-disabled);
   
   /* background color - checked */
-  --gm-btn-radio-color-bg-checked: var(--gm-component-input-color-bg-checked);
-  --gm-btn-radio-color-bg-checked-hover: var(--gm-component-input-color-bg-checked-hover);
-  --gm-btn-radio-color-bg-checked-focus: var(--gm-component-input-color-bg-checked-focus);
-  --gm-btn-radio-color-bg-checked-active: var(--gm-component-input-color-bg-checked-active);
-  --gm-btn-radio-color-bg-checked-disabled: var(--gm-component-input-color-bg-checked-disabled);
+  --gm-color-bg-btn-radio-checked: var(--gm-color-bg-component-input-checked);
+  --gm-color-bg-btn-radio-checked-hover: var(--gm-color-bg-component-input-checked-hover);
+  --gm-color-bg-btn-radio-checked-focus: var(--gm-color-bg-component-input-checked-focus);
+  --gm-color-bg-btn-radio-checked-active: var(--gm-color-bg-component-input-checked-active);
+  --gm-color-bg-btn-radio-checked-disabled: var(--gm-color-bg-component-input-checked-disabled);
   
   /* background color - disabled */
-  --gm-btn-radio-color-bg-checked-disabled: var(--gm-component-input-color-bg-checked-disabled);
+  --gm-color-bg-btn-radio-checked-disabled: var(--gm-color-bg-component-input-checked-disabled);
   
   /* border width */
-  --gm-btn-radio-border-width: var(--gm-component-input-border-width);
-  --gm-btn-radio-border-width-unchecked-hover: var(--gm-component-input-border-width-hover);
-  
-  /* checked fill gap */
-  --gm-btn-radio-fill-gap: var(--gm-component-input-gap);
+  --gm-size-border-radio-btn: var(--gm-size-border-component-input);
+  --gm-size-border-radio-btn-unchecked-hover: var(--gm-size-border-component-input-hover);
 
   /* radius */
-  --gm-btn-radio-border-radius: var(--gm-border-rad-input);
+  --gm-border-radius-btn-radio: var(--gm-border-rad-input);
     
   /* size */
-  --gm-btn-radio-input-size: var(--gm-component-input-size);
+  --gm-size-btn-radio-input: var(--gm-size-component-input);
   
   /* spacing */
-  --gm-btn-radio-sp-input-to-label: var(--gm-component-input-sp-to-label);
-  --gm-btn-radio-sp-block: var(--gm-component-input-sp-block);
-  --gm-btn-radio-sp-inline: var(--gm-component-input-sp-inline);
+  --gm-sp-btn-radio-input-to-label: var(--gm-sp-inline-start-component-label);
+  --gm-sp-btn-radio-block: var(--gm-sp-block-component-input);
+  --gm-sp-btn-radio-inline: var(--gm-sp-inline-component-input);
   
   /* focus indicator */
-  --gm-btn-radio-focus-indicator-shadow: var(--gm-component-focus-indicator-shadow);
+  --gm-focus-indicator-btn-radio: var(--gm-shadow-focus-indicator);
 }
 
 
-
-/********* ********* ********* ********* *********/
-/*** RADIO specific - Responses list ***/
+/********* Set Styles *********/
 .gm .lrn.lrn-assess .lrn_mcq .lrn_mcqgroup  {
   margin: 0;
   padding: 0;
   
-  margin-block: var(--gm-lrn-stimulus-sp-block);
+  margin-block: var(--gm-sp-block-lrn-mc);
   margin-inline: var(--gm-cortex-sp-medium);
   
   .lrn-mcq-option {
     position: relative;
-    margin-block: var(--gm-btn-radio-sp-block);
-    margin-inline: var(--gm-btn-radio-sp-inline);
+    margin-block: var(--gm-sp-btn-radio-block);
+    margin-inline: var(--gm-sp-btn-radio-inline);
   }
   
   .lrn-label {
     position: relative;
-    font-size: var(--gm-component-text-size);
+    font-size: var(--gm-text-size-component);
     padding: 0;
     margin: 0;
-    padding-inline-start: calc(var(--gm-btn-radio-input-size) // account for input width
-                              + (var(--gm-component-input-safe-area) * 2) // account for input safe area horizontal space
-                              + var(--gm-btn-radio-sp-input-to-label)); // 8px inline start, 12px total incl safe area
+    padding-inline-start: calc(var(--gm-size-btn-radio-input) // account for input width
+                              + (var(--gm-size-component-input-safe-area) * 2) // account for input safe area horizontal space
+                              + var(--gm-sp-btn-radio-input-to-label)); // 8px inline start, 12px total incl safe area
   }
   
   /* Radio input */
@@ -87,19 +83,19 @@
     left: 0;
     z-index: 1;
     
-    width: var(--gm-btn-radio-input-size);
-    height: var(--gm-btn-radio-input-size);
-    padding: var(--gm-component-input-safe-area);
+    width: var(--gm-size-btn-radio-input);
+    height: var(--gm-size-btn-radio-input);
+    padding: var(--gm-size-component-input-safe-area);
     box-sizing: border-box;
     
     outline: none;
     cursor: pointer;
     appearance: none;
     
-    border-radius: var(--gm-btn-radio-border-radius); 
-    border-width: var(--gm-btn-radio-border-width);
+    border-radius: var(--gm-border-radius-btn-radio); 
+    border-width: var(--gm-size-border-radio-btn);
     border-style: solid;
-    border-color: var(--gm-btn-radio-color-border-default);
+    border-color: var(--gm-color-border-btn-radio-default);
     
     &:dir(rtl) {
       right: 0;
@@ -109,47 +105,51 @@
     &::after {
       content: "";
       position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-block-start: var(--gm-size-border-radio-btn);
+      margin-inline-start: var(--gm-size-border-radio-btn);
   
-      width: calc(100% - (var(--gm-btn-radio-border-width) * 2));
-      height: calc(100% - (var(--gm-btn-radio-border-width) * 2));
+      width: calc(100% - (var(--gm-size-border-radio-btn) * 2));
+      height: calc(100% - (var(--gm-size-border-radio-btn) * 2));
   
       box-sizing: border-box;
-      margin-block-start: var(--gm-btn-radio-border-width);
-      margin-inline-start: var(--gm-btn-radio-border-width);
       cursor: pointer;
       
       display: block;
-      border-radius: var(--gm-btn-radio-border-radius);
-      background-color: var(--gm-btn-radio-color-bg-checked);
+      border-radius: var(--gm-border-radius-btn-radio);
+      background-color: var(--gm-color-bg-btn-radio-checked);
       transform: scale(0);
       transition: var(--gm-atomic-transition);
     }
 
     &:hover:not(:checked) {
-      border-width: var(--gm-btn-radio-border-width-unchecked-hover);
+      border-width: var(--gm-size-border-radio-btn-unchecked-hover);
       border-color: var(--gm-btn-radio-border-color-hover);
     }
      
     &:hover:checked {
-      border-width: var(--gm-btn-radio-border-width);
+      border-width: var(--gm-size-border-radio-btn);
       border-color: var(--gm-btn-radio-border-color-hover);
     }
   
     &.is-focused:not(:checked),
     &:focus-visible:not(:checked) {
-      box-shadow: var(--gm-btn-radio-focus-indicator-shadow);
+      box-shadow: var(--gm-focus-indicator-btn-radio);
       
       &::after {
-        //box-shadow: var(--gm-btn-radio-focus-indicator-shadow);
+        //box-shadow: var(--gm-focus-indicator-btn-radio);
       }
     }
 
     &.is-focused:checked,
     &:focus-visible:checked {
-      box-shadow: var(--gm-btn-radio-focus-indicator-shadow);
+      box-shadow: var(--gm-focus-indicator-btn-radio);
       
       &::after {
-        //box-shadow: var(--gm-btn-radio-focus-indicator-shadow);
+        //box-shadow: var(--gm-focus-indicator-btn-radio);
       }
     }
     
@@ -158,7 +158,7 @@
     &:disabled:hover:not(:checked),
     &.is-disabled:hover:not(:checked) {
       pointer-events: none;
-      border-color: var(--gm-btn-radio-color-border-disabled);
+      border-color: var(--gm-color-border-btn-radio-disabled);
     }
       
     &:checked {
