@@ -1,0 +1,48 @@
+:root {
+  /* Font families */
+  --gm-atomic-font-primary: "Circular Std";
+  
+  /****** TEXT SIZE ******/
+  /*** figma text size ***/
+  --gm-cortex-text-size-xs: 0.76rem; // 12px
+  --gm-cortex-text-size-sm: 0.875rem; // 14px
+  --gm-cortex-text-size-md: 1rem; // 16px
+  --gm-cortex-text-size-lg: 1.25rem; // 18px
+  --gm-cortex-text-size-xl: 1.375rem; // 22px
+  --gm-cortex-text-size-x2l: 1.625rem; // 26px
+  --gm-cortex-text-size-3xl: 2.25rem; // 36px
+  --gm-cortex-text-size-4xl: 2.75rem; // 44px
+  --gm-cortex-text-size-5xl: 3.5rem; // 56px
+  
+  /**** Font weight ****/
+  --gm-font-weight-light: 300;
+  --gm-font-weight-regular: 400;
+  --gm-font-weight-semibold: 500;
+  --gm-font-weight-bold: 600;
+  --gm-font-weight-extra-bold: 700;
+}
+
+
+/****** ALIASES - named for general component usage ******/
+:root {
+  /* text size */
+  --gm-text-size-base: var(--gm-cortex-text-size-md);
+  --gm-text-line-height-base: calc(var(--gm-text-size-base) * 1.4);
+  
+  /* learnosity text size */
+  --gm-text-size-component-lrn-question: var(--gm-cortex-text-size-xl);
+  --gm-text-size-component: var(--gm-cortex-text-size-sm);
+  --gm-size-text-component-label: var(--gm-cortex-text-size-sm);
+}
+
+/****** K-2 overrides ******/
+.theme-age-k2 {
+  --gm-text-size-base: var(--gm-cortex-text-size-lg);
+  --gm-text-line-height-base: calc(var(--gm-text-size-base) * 1.7);
+  
+  /* learnosity text size */
+  --gm-text-size-component-lrn-question: var(--gm-cortex-text-size-x2l);
+  --gm-text-size-component: var(--gm-cortex-text-size-lg);
+  --gm-size-text-component-label: var(--gm-cortex-text-size-lg);
+}
+

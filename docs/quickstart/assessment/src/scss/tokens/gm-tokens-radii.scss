@@ -1,0 +1,47 @@
+:root {
+  /*** figma border radii ***/
+  --gm-cortex-border-radius-sm: 4px; // from figma and atomic
+  --gm-cortex-border-radius-md: 8px; // from figma
+  --gm-cortex-border-radius-lg: 16px; // from figma
+  --gm-cortex-border-radius-xl: 56px; // from figma
+  
+  /*** atomic border radii - WIP ***/
+  --gm-atomic-border-radius-01: 2px;
+  --gm-atomic-border-radius-02: 4px;
+  --gm-atomic-border-radius-03: 0.25rem; // same as 4px
+  --gm-atomic-border-radius-04: 5px;
+  --gm-atomic-border-radius-05: 6px;
+  --gm-atomic-border-radius-06: 8px;
+  --gm-atomic-border-radius-07: 12px;
+  --gm-atomic-border-radius-08: 15px;
+  --gm-atomic-border-radius-09: 20px;
+  --gm-atomic-border-radius-10: 32px;
+  --gm-atomic-border-radius-11: 50%;
+  
+  /*** student experience border radii ***/
+  /*** Set Border Radii ***/
+  --gm-student-experience-border-radius-01: 8px;
+  --gm-student-experience-border-radius-10: 30px;
+  --gm-student-experience-border-radius-11: 40px;
+}
+
+
+/****** ALIASES - named for general component usage ******/
+:root {
+  --gm-border-radius-container: var(--gm-atomic-border-radius-02);// 
+  --gm-border-radius-card: var(--gm-atomic-border-radius-02); // 
+  --gm-border-radius-btn-input: var(--gm-atomic-border-radius-11); // circle
+  
+  --gm-border-radius-component: var(--gm-atomic-border-radius-02);
+  
+  /* components with same rounding in student exp */
+  --gm-border-radius-component-basic: var(--gm-atomic-border-radius-02);
+}
+
+/****** STUDENT EXPERIENCE overrides ******/
+.theme-student-experience { 
+  --gm-border-radius-container: var(--gm-student-experience-border-radius-11);
+  --gm-border-radius-card: var(--gm-student-experience-border-radius-01);
+  
+  --gm-border-radius-component: var(--gm-student-experience-border-radius-10);
+}

@@ -1,7 +1,5 @@
 /****** GLOBALS - named for figma or atomi sourcing ******/
 :root {
-  /*** *** *** *** *** FIGMA COLOR VARS *** *** *** *** ***/
-  
   /* White from figma */
   --gm-white: hsl(0, 0%, 100%);
   
@@ -57,6 +55,7 @@
   
   /* text colors */
   --gm-color-text: hsl(0, 0%, 10%);
+  --gm-color-text-light: hsl(0, 0%, 100%);
   
   /** Component text color defaults **/
   --gm-color-text-component-primary-default: var(--gm-white);
@@ -98,11 +97,11 @@
   --gm-color-border-component-ghost-active: var(--gm-n100);
   --gm-color-border-component-ghost-disabled: var(--gm-n10);
   
-  /* radio specifics */
+  /* radio and checkbox specifics */
   --gm-color-border-component-input-unchecked-default: var(--gm-beige180);
   --gm-color-border-component-input-unchecked-hover: var(--gm-n100);
   --gm-color-border-component-input-unchecked-focus: var(--gm-beige180);
-  --gm-color-border-component-input-unchecked-active: var(--gm-n100);
+  --gm-color-border-component-input-unchecked-active: var(--gm-beige180);
   --gm-color-border-component-input-unchecked-disabled: var(--gm-beige180);
   
   --gm-color-border-component-input-checked-default: var(--gm-beige180);
@@ -110,7 +109,9 @@
   --gm-color-border-component-input-checked-focus: var(--gm-beige180);
   --gm-color-border-component-input-checked-active: var(--gm-n100);
   --gm-color-border-component-input-checked-disabled: var(--gm-beige180);
-  
+
+  --gm-color-bg-component-input-unchecked-active: var(--gm-beige40);
+
   --gm-color-bg-component-input-checked: var(--gm-prbase);
   --gm-color-bg-component-input-checked-hover: var(--gm-prbase);
   --gm-color-bg-component-input-checked-focus: var(--gm-prbase);
@@ -121,6 +122,9 @@
                                                   var(--gm-color-border-component-input-disabled) 46%, 
                                                   var(--gm-color-border-component-input-disabled) calc(46% + var(--gm-component-border-width)), 
                                                   transparent calc(46% + var(--gm-component-border-width)));
+                                                  
+  /* block component labels, light on cortext, dark on student exp */
+  --gm-color-text-component-block-label: var(--gm-white);
 }
 
 .theme-student-experience {
@@ -144,5 +148,7 @@
   --gm-color-bg-component-input-checked-active: var(--gm-olive120);
   
   --gm-color-icon-default: var(--gm-olive140);
+  
+  --gm-color-text-component-block-label: var(--gm-n100);
 }
 

@@ -1,0 +1,35 @@
+.gm .lrn.lrn-assess .lrn_mcq {
+  
+  --gm-sp-inline-mc-input-group: var(--gm-sp-inline-component-group);
+  
+  --gm-sp-block-mc-input-item-block: var(--gm-sp-block-component-block-item);
+}
+
+/********* Set Styles *********/
+.gm .lrn.lrn-assess .lrn_mcq .lrn_mcqgroup  {
+  margin: 0;
+  padding: 0;
+
+  padding-inline: var(--gm-sp-inline-mc-input-group);
+  
+  /* radio and checkbox list items */
+  .lrn-mcq-option {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    
+    position: relative;
+    display: inline-flex;
+  }
+}
+
+/* block style */
+.gm .lrn.lrn-assess .lrn_mcq .lrn_mcqgroup.lrn_mcqgroup-block  {
+  padding-inline: 0;
+  padding-block: var(--gm-sp-inline-mc-input-group);
+  
+  .lrn-mcq-option {
+    padding-block: calc(var(--gm-sp-block-mc-input-item-block) / 2);
+  }
+}

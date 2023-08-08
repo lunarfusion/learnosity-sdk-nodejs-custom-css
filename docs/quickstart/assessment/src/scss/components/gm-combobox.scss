@@ -1,3 +1,4 @@
+/* This has not been fully styled after Cortex yet, WIP */
 /* Set tokens - for my added menus for selecting themes */
 .gm .select {
   --gm-combobox-color-icon-default: var(--gm-atomic-color-icon-default);
@@ -5,7 +6,7 @@
 
 /* WIP */
 /* Outer container for select list group */
-.select {
+.gm .select {
   position: relative;
   display: inline-flex;
   margin: 1rem;
@@ -38,12 +39,11 @@
     color: rgb(0, 0, 0);
     box-shadow: rgb(112, 108, 92) 0px 0px 0px 1px;
     border-radius: 4px;
-  }
-  
+
   /* disable browser arrow icon */
-  select {
     -webkit-appearance: none;
     -moz-appearance: none;
+    appearance: none;
   }
 
   /* custom arrow icon */
@@ -70,6 +70,8 @@
     content: "";
     color: var(--gm-combobox-color-icon-default);
     
+    pointer-events: none;
+    
     /* can IcoMinds work in Learnosity? */
     // font-family: IcoMinds-Font !important;
     // content: "";
@@ -77,16 +79,17 @@
   }
   
   &__option {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
+    // display: flex;
+    // -webkit-box-align: center;
+    // align-items: center;
+    // -webkit-box-pack: justify;
+    // justify-content: space-between;
     color: rgb(0, 0, 0);
     cursor: pointer;
-    padding: 20px 15px;
+    //padding: 20px 15px;
+    padding: 6px 32px 6px 16px;
     white-space: nowrap;
-    font-weight: 400;
+    font-weight: var(--gm-font-weight-regular);
     z-index: 2;
     position: relative;
   }

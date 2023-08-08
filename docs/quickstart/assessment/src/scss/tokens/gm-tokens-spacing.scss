@@ -25,7 +25,7 @@
 /****** ALIASES - named for general component usage ******/
 :root {
   /*** learnosity ***/
-  --gm-sp-block-lrn-mc: var(--gm-cortex-sp-small);
+  //--gm-sp-block-component-lrn-response: var(--gm-cortex-sp-small);
   
   /*** component size ***/
   --gm-size-block-component-sm: var(--gm-atomic-sp-3);
@@ -38,19 +38,34 @@
   --gm-sp-interior-inline-component: var(--gm-cortex-sp-medium); // naming for padding?
   --gm-sp-interior-inline-component-start: var(--gm-cortex-sp-medium); // naming for padding?
   --gm-sp-interior-inline-component-end: var(--gm-cortex-sp-medium); // naming for padding?
+
+  /* space around multiple choice item group */
+  --gm-sp-inline-component-group: var(--gm-cortex-sp-medium);
+     
+  /* space around multiple choice items */
+  --gm-sp-block-component-input-item: var(--gm-cortex-sp-medium);
+  
+  /* radio items block spacing */
+  --gm-sp-block-component-input-radio: var(--gm-cortex-sp-medium);
+  
+  /* checkbox items block spacing */
+  --gm-sp-block-component-input-checkbox: var(--gm-cortex-sp-large);
   
   /*** input size ***/
-  --gm-size-component-input: var(--gm-cortex-sp-medium);
+  --gm-size-component-input-radio: var(--gm-cortex-sp-medium);
+  --gm-size-component-input-checkbox: var(--gm-cortex-sp-large);
   
-  /*** input spacing ***/
+  /*** radio input spacing ***/
   --gm-size-component-input-safe-area: var(--gm-cortex-sp-extra-extra-small); // safe area around radio buttons
-  --gm-sp-inline-start-component-label: var(--gm-cortex-sp-extra-small);
-  --gm-sp-block-component-input: var(--gm-cortex-sp-medium);
-  --gm-sp-inline-component-input: var(--gm-cortex-sp-medium);
+  --gm-sp-inline-start-component-radio-label: var(--gm-cortex-sp-extra-small);
   
-  /*** input border ***/
-  --gm-size-border-component-input: 1px;
-  --gm-size-border-component-input-hover: 2px;
+  /* spacing block variant */
+  --gm-sp-block-component-item-block: var(--gm-cortex-sp-medium);
+  --gm-sp-inline-component-item-block: var(--gm-cortex-sp-medium);
+  --gm-sp-block-component-block-item: var(--gm-cortex-sp-extra-extra-small);
+  
+  /*** checkbox input spacing ***/
+  --gm-sp-inline-start-component-checkbox-label: var(--gm-cortex-sp-extra-small);
 }
 
 
@@ -69,12 +84,27 @@
   /*** component size ***/
   --gm-size-block-component-sm: 50px; // normal buttons
   --gm-size-block-component-md: 70px; // small buttons
+
+  /* space around multiple choice item group */
+  --gm-sp-inline-component-group: var(--gm-cortex-sp-large);
+
+  /* radio items block spacing */
+  --gm-sp-block-component-input-radio: var(--gm-cortex-sp-large);
+  
+  /* checkbox items block spacing */
+  --gm-sp-block-component-input-checkbox: var(--gm-cortex-sp-extra-large);
   
   /*** input size ***/
-  --gm-size-component-input: var(--gm-cortex-sp-large);
+  --gm-size-component-input-radio: var(--gm-cortex-sp-large);
   
-  /*** input spacing ***/
-  --gm-sp-inline-start-component-label: var(--gm-cortex-sp-medium);
-  --gm-sp-block-component-input: var(--gm-cortex-sp-extra-large);
-  --gm-sp-inline-component-input: var(--gm-cortex-sp-large);
+  /*** radio input spacing ***/
+  --gm-sp-inline-start-component-radio-label: var(--gm-cortex-sp-medium);
+  
+  /* spacing block variant */
+  --gm-sp-block-component-item-block: var(--gm-cortex-sp-large);
+  --gm-sp-inline-component-item-block: var(--gm-cortex-sp-large);
+  --gm-sp-block-component-block-item: var(--gm-cortex-sp-extra-small);
+  
+  /*** checkbox input spacing ***/
+  --gm-sp-inline-start-component-checkbox-label: var(--gm-cortex-sp-medium);
 }

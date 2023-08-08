@@ -14,6 +14,7 @@
       <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/CircularStd-BoldItalic.woff">
       <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/CircularStd-Black.woff">
       <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/CircularStd-BlackItalic.woff">
+      
       <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/Quicksand-Bold.ttf">
       <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/Quicksand-Light.ttf">
       <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/Quicksand-Medium.ttf">
@@ -25,69 +26,70 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body class="gm">
+    
     <div id="app-container">
         <h1>Standalone Assessment Example</h1>
         <div id="gm-learnosity-assessment-wrapper">
           <div id="learnosity_assess"></div>
         </div>
-    
-        <div class="theme-select-wrapper">
-          <span class="select-label sr-only">Select a Theme:</span>
-          <div class="select">
-            <select id="change-theme"
-                aria-labelledby="select-label"
-                class="select__list"
-                id="select-list"
-                role="listbox"
-                tabindex="-1"
-                data-popper-reference-hidden="false"
-                data-popper-escaped="false"
-                data-popper-placement="bottom"
-                onchange="changeTheme(this)"
-            >
-        
-                <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-1" role="option" value="theme-light">
-                  <div class="select__option-content">Select a Theme</div>
-                </option>
-            
-                <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-1" role="option" value="theme-light">
-                    <div class="select__option-content">Cortex (default)</div>
-                </option>          
-        
-                <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-4" role="option" value="theme-student-experience">
-                    <div class="select__option-content">Student Experience</div>
-                </option>
-            </select>
-          </div>
-            
-          <div class="select">
-            <select id="change-age-theme"
-                aria-labelledby="select-label"
-                class="select__list"
-                id="select-list"
-                role="listbox"
-                tabindex="-1"
-                data-popper-reference-hidden="false"
-                data-popper-escaped="false"
-                data-popper-placement="bottom"
-                onchange="changeAgeTheme(this)"
-            >
-            
-                <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-1" role="option" value="theme-light">
-                  <div class="select__option-content">Select a Student Age</div>
-                </option>
-            
-                <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-1" role="option" value="theme-age-normal">
-                    <div class="select__option-content">Normal (grade 3+)</div>
-                </option>
-        
-                <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-3" role="option" value="theme-age-k2">
-                    <div class="select__option-content">K-grade2</div>
-                </option>   
-            </select>
-          </div>
-        </div>
     </div><!-- end app-container -->
+    
+    <div class="theme-select-wrapper">
+      <span class="select-label sr-only">Select a Theme:</span>
+      <div class="select">
+        <select id="change-theme"
+            aria-labelledby="select-label"
+            class="select__list"
+            id="select-list"
+            role="listbox"
+            tabindex="-1"
+            data-popper-reference-hidden="false"
+            data-popper-escaped="false"
+            data-popper-placement="bottom"
+            onchange="changeTheme(this)"
+        >
+    
+            <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-1" role="option" value="theme-light">
+              <div class="select__option-content">Select a Theme</div>
+            </option>
+        
+            <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-1" role="option" value="theme-light">
+                <div class="select__option-content">Cortex (default)</div>
+            </option>          
+    
+            <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-4" role="option" value="theme-student-experience">
+                <div class="select__option-content">Student Experience</div>
+            </option>
+        </select>
+      </div>
+        
+      <div class="select">
+        <select id="change-age-theme"
+            aria-labelledby="select-label"
+            class="select__list"
+            id="select-list"
+            role="listbox"
+            tabindex="-1"
+            data-popper-reference-hidden="false"
+            data-popper-escaped="false"
+            data-popper-placement="bottom"
+            onchange="changeAgeTheme(this)"
+        >
+        
+            <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-1" role="option" value="theme-light">
+              <div class="select__option-content">Select a Student Age</div>
+            </option>
+        
+            <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-1" role="option" value="theme-age-normal">
+                <div class="select__option-content">Normal (grade 3+)</div>
+            </option>
+    
+            <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-3" role="option" value="theme-age-k2">
+                <div class="select__option-content">K-grade2</div>
+            </option>   
+        </select>
+      </div>
+    </div>
 
         <script>
             const request = <%- JSON.stringify(request) %>;

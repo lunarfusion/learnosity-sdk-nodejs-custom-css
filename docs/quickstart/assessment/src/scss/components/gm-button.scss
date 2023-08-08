@@ -1,6 +1,6 @@
 /****** Set component aliases ******/
-.lrn.lrn-assess button[class^="lrn_btn"],
-.lrn.lrn-assess .lrn-region:not(.lrn-items-region) button[class^="lrn_btn"] {
+button[class^="lrn_btn"],
+button[class^="lds-btn"] {
   /* color */
   --gm-color-text-btn-primary-default: var(--gm-color-text-component-primary-default);
   --gm-color-text-btn-primary-hover: var(--gm-color-text-component-primary-hover);
@@ -49,21 +49,16 @@
   --gm-size-text-btn: var(--gm-text-size-component);
   
   /* focus indicator */
-  --gm-focus-indicator-btn: var(--gm-shadow-focus-indicator);
+  --gm-focus-indicator-btn: var(--gm-component-focus-indicator);
 }
 
 
 /********* Set Styles *********/
 
-/* set inline size to not apply to right region small buttons */
-.gm .lrn.lrn-assess .lrn-region:not(.lrn-right-region) button[class^="lrn_btn"] {
-  min-inline-size: var(--gm-size-inline-min-btn);
-  inline-size: auto;
-}
-
 /* default style is ghost button */
 .gm .lrn.lrn-assess button[class^="lrn_btn"],
-.gm .lrn.lrn-assess .lrn-region:not(.lrn-items-region) button[class^="lrn_btn"] {
+.gm .lrn.lrn-assess button[class^="lds-btn"],
+.gm .lrn.lrn-assess .lrn-region:not(.lrn-items-region) button[class^="lrn_btn"]  {
   position: relative;
   display: inline-flex;
   box-sizing: border-box;
@@ -78,7 +73,7 @@
   padding-inline: var(--gm-padding-inline-btn);
   
   font-size: var(--gm-size-text-btn);
-  font-weight: 400;
+  font-weight: var(--gm-font-weight-regular);
   text-align: center;
 
   border-radius: var(--gm-border-radius-btn);
@@ -93,6 +88,8 @@
   border-color: var(--gm-color-border-btn-ghost-default);
   
   color: var(--gm-color-text-btn-ghost-default);
+  
+  float: none;
 
   /* icon */
   &::before {
@@ -168,3 +165,13 @@
     } 
   }
 }
+
+
+
+/*** Menu Buttons ***/
+/* set inline size to not apply to right region small buttons */
+.gm .lrn.lrn-assess .lrn-region:not(.lrn-right-region) button[class*="_btn"] {
+  min-inline-size: var(--gm-size-inline-min-btn);
+  inline-size: auto;
+}
+

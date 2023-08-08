@@ -6,8 +6,8 @@ body.gm {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Circular Std";
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: var(--gm-font-weight-regular);
+  font-size: var(--gm-text-size-base);
   color: var(--gm-color-text);
 }
 
@@ -22,12 +22,24 @@ body.gm {
   color: transparent;
 }
 
+.gm .lrn p {
+  font-size: var(--gm-text-size-base);
+  line-height:var(--gm-text-line-height-base);
+}
+
+/* draggable text */
+.gm .lrn .lrn_item {
+
+}
+
 /********* Outer app container, theme color applied here *********/
 #app-container {
   color: var(--gm-color-text);
   background-color: var(--gm-color-bg-2);
   color: var(--gm-color-text);
   padding: 1rem;
+  border-radius: var(--gm-border-radius-container);
+  box-shadow: var(--gm-shadow-container);
 }
 
 /********* Inner questions container, theme size is applied here *********/
@@ -97,8 +109,8 @@ body.gm {
         grid-row: 2;
         background-color: var(--gm-color-bg-base);
         padding: 1rem;
-        border-radius: var(--gm-border-rad-container);
-        box-shadow: var(--gm-shadow-container);
+        border-radius: var(--gm-border-radius-card);
+        box-shadow: var(--gm-shadow-card);
       }
     }
   }
@@ -127,21 +139,22 @@ body.gm {
 
 /********* Typography resets *********/
 .gm .lrn.lrn-assess * {
-  font-family: "Circular Std";
+  font-family: var( --gm-atomic-font-primary);
 }
 
 /* test title region */
 .gm .lrn.lrn-assess .lrn-group-top {
   .test-title-text {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: var(--gm-cortex-text-size-md);
+    font-weight: var(--gm-font-weight-semibold);
   }
 
   .subtitle {
-    font-size: 0.8rem;
-    font-weight: 400;
+    font-size: var(--gm-cortex-text-size-sm);
+    font-weight: var(--gm-font-weight-regular);
   }
 }
+
 
 /********* Timer *********/
 .gm .lrn-assess .timer {
@@ -176,13 +189,6 @@ body.gm {
   }
 }
 
-/*********  Question Content *********/
-.lrn_stimulus {
-  &_content {
-    font-size: var(--gm-text-size-component-lrn-question);
-    font-weight: 600;
-  }
-}
 
 /********* Items TOC Menu *********/
 .gm .lrn.lrn-assess.lrn-md {
@@ -208,7 +214,7 @@ body.gm {
 /* items container */
 .gm .lrn.lrn-assess .lrn-vertical-toc .lrn-pager {
   border: 1px solid var(--gm-beige140);
-  border-radius: var(--gm-cortex-border-rad-md);
+  border-radius: var(--gm-cortex-border-radius-md);
   margin-inline: 1rem;
   background-color: var(--gm-beige20); 
   overflow: hidden;
@@ -251,7 +257,7 @@ body.gm {
   
   background-color: var(--gm-beige20);
   border: 1px solid var(--gm-beige140);
-  border-radius: var(--gm-cortex-border-rad-md);
+  border-radius: var(--gm-cortex-border-radius-md);
   
   .menu-mask,
   .menu-overlay {

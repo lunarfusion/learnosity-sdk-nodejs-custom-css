@@ -1,11 +1,22 @@
 // tokens
 @import "scss/tokens/gm-tokens-color";
 @import "scss/tokens/gm-tokens-spacing";
+@import "scss/tokens/gm-tokens-typography";
+@import "scss/tokens/gm-tokens-shadows";
+@import "scss/tokens/gm-tokens-borders";
+@import "scss/tokens/gm-tokens-radii";
 @import "scss/tokens/gm-tokens";
 @import "scss/gm-learnosity-general";
 
 // Components
+@import "scss/components/gm-lrn-question";
+
 @import "scss/components/gm-button";
 @import "scss/components/gm-combobox";
+
+@import "scss/components/gm-lrn-multiple-choice";
+@import "scss/components/gm-input-label";
 @import "scss/components/gm-radio-group";
+@import "scss/components/gm-checkbox-group";
+
 @import "scss/components/gm-draggable";
