@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <title>Learnosity Buttons Static HTML</title>
+    <script src="//items.learnosity.com/?latest-lts"></script>
+
+    <!-- TODO: replace FontAwesome with IcoMinds -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+    <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/CircularStd-Book.woff" />
+    <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/CircularStd-BookItalic.woff" />
+    <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/CircularStd-Bold.woff" />
+    <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/CircularStd-BoldItalic.woff" />
+    <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/CircularStd-Black.woff" />
+    <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/CircularStd-BlackItalic.woff" />
+    <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/Quicksand-Bold.ttf" />
+    <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/Quicksand-Light.ttf" />
+    <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/Quicksand-Medium.ttf" />
+    <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/Quicksand-Regular.ttf" />
+    <link href="https://cdn.digital.greatminds.org/dp-assets/dp-fonts/Quicksand-SemiBold.ttf" />
+
+    <!-- Learnosity's CSS -->
+    <link rel="stylesheet" type="text/css" href="https://questions.learnosity.com/v2.197.3/stylesheets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://assess.learnosity.com/v2.130.2/assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="https://questions.learnosity.com/v2.197.3/stylesheets/css/vendor.css" />
+
+    <!-- Monet's CSS -->
+    <link rel="stylesheet" type="text/css" href="../quickstart/assessment/public/css/style.css" />
+    
+    <style>
+      .buttons-wrapper {
+        position: relative;
+        margin: 2rem 0;
+      }
+    </style>
+    
+  </head>
+  <body class="gm">
+    <div id="app-container">
+      <h1>Buttons</h1>
+      <div id="gm-learnosity-assessment-wrapper">
+        <div class="lrn lrn-assess" id="learnosity_assess" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true">
+          
+          <div class="buttons-wrapper">
+            <button type="button" class="lrn_btn pos-right test-pause" aria-label="Pause" data-original-title="Pause"><span class="btn-label sr-only pause">Pause</span></button>
+          </div>
+
+          <div class="buttons-wrapper">
+            <button type="button" class="lds-btn lds-btn-secondary lrn_btn lrn_validate"><span>Check Answer</span></button>
+          </div>
+          
+          <div class="buttons-wrapper">          
+          <button type="button" class="lrn_btn item-prev pos-right" data-original-title="Previous" aria-label="Previous Item 2"><span class="btn-label sr-only previousButtonLabel">Previous</span></button>
+          
+          <button type="button" class="lrn_btn lrn_btn_blue test-submit item-next pos-right" aria-label="Finish Submit" data-original-title="Finish"><span class="btn-label">Finish</span></button>
+          
+          <button type="button" class="lrn_btn lrn_btn_blue test-review-screen pos-right" aria-label="Review screen" data-original-title="Review"><span class="btn-label">Review</span></button>
+          
+          <button id="lrn_assess_next_btn" type="button" class="lrn_btn lrn_btn_blue item-next pos-right" data-original-title="Next" aria-label="Next Item 4"><span class="btn-label">Next</span></button>
+          </div>
+          
+          <div class="buttons-wrapper">
+            <button type="button" aria-pressed="false" class="lrn_btn test-fullscreen-btn pos-middle" aria-label="Full screen" data-original-title="Full Screen"><span class="btn-label">Full Screen</span></button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="theme-select-wrapper">
+      <span class="select-label sr-only">Select a Theme:</span>
+      <div class="select">
+        <select
+          id="change-theme"
+          aria-labelledby="select-label"
+          class="select__list"
+          id="select-list"
+          role="listbox"
+          tabindex="-1"
+          data-popper-reference-hidden="false"
+          data-popper-escaped="false"
+          data-popper-placement="bottom"
+          onchange="changeTheme(this)"
+        >
+          <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-1" role="option" value="theme-light">
+            <div class="select__option-content">Select a Theme</div>
+          </option>
+
+          <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-1" role="option" value="theme-light">
+            <div class="select__option-content">Cortex (default)</div>
+          </option>
+
+          <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-4" role="option" value="theme-student-experience">
+            <div class="select__option-content">Student Experience</div>
+          </option>
+        </select>
+      </div>
+
+      <div class="select">
+        <select
+          id="change-age-theme"
+          aria-labelledby="select-label"
+          class="select__list"
+          id="select-list"
+          role="listbox"
+          tabindex="-1"
+          data-popper-reference-hidden="false"
+          data-popper-escaped="false"
+          data-popper-placement="bottom"
+          onchange="changeAgeTheme(this)"
+        >
+          <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-1" role="option" value="theme-light">
+            <div class="select__option-content">Select a Student Age</div>
+          </option>
+
+          <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-1" role="option" value="theme-age-normal">
+            <div class="select__option-content">Normal (grade 3+)</div>
+          </option>
+
+          <option aria-selected="false" aria-disabled="true" class="select__option" data-nav-id="1" id="select-option-3" role="option" value="theme-age-k2">
+            <div class="select__option-content">K-grade2</div>
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <!-- theme switcher -->
+    <script src="../quickstart/assessment/public/js/theme-options.js"></script>
+  </body>
+</html>
